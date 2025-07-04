@@ -1,0 +1,156 @@
+{
+  "contentType": "application/vnd.gorules.decision",
+  "nodes": [
+    {
+      "type": "inputNode",
+      "content": {
+        "schema": ""
+      },
+      "id": "8b3b81ed-18c1-4a89-ad86-4edf41fa787a",
+      "name": "request",
+      "position": {
+        "x": 30,
+        "y": 160
+      }
+    },
+    {
+      "type": "outputNode",
+      "content": {
+        "schema": ""
+      },
+      "id": "b367d40e-0e78-48ba-ab5a-1bdb16cac168",
+      "name": "response",
+      "position": {
+        "x": 670,
+        "y": 160
+      }
+    },
+    {
+      "type": "decisionTableNode",
+      "content": {
+        "hitPolicy": "first",
+        "rules": [
+          {
+            "_id": "c5c51087-48a3-4eb5-9703-08c514a8d8fb",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": ">=3",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "true",
+            "572438ec-5f9e-4937-8982-949d557960a1": "true",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "true",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "true"
+          },
+          {
+            "_id": "718c87c5-7420-4594-bf4e-7d42cf79d492",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": ">=3",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "true",
+            "572438ec-5f9e-4937-8982-949d557960a1": "true",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "false",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "false"
+          },
+          {
+            "_id": "3392d7ce-883e-4cb8-99b1-a886fcb953c4",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": "<3",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "",
+            "572438ec-5f9e-4937-8982-949d557960a1": "",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "false"
+          },
+          {
+            "_id": "5b4031a3-1efc-4415-ba2a-dca0e289eb8d",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": "",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "",
+            "572438ec-5f9e-4937-8982-949d557960a1": "false",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "false"
+          },
+          {
+            "_id": "07a77fe7-923d-4849-8f5a-1d0637478ecb",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": ">=3",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "false",
+            "572438ec-5f9e-4937-8982-949d557960a1": "true",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "\"Final Year\"",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "true",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "true"
+          },
+          {
+            "_id": "88287290-8783-421f-8c28-ae2c8fadeacc",
+            "_description": "",
+            "480ee653-1f8f-4562-bae0-a502895feafb": "",
+            "3d99763e-bffb-4472-a845-91c7f0c3310b": "",
+            "572438ec-5f9e-4937-8982-949d557960a1": "",
+            "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d": "",
+            "222ee7ac-81c8-4e3b-81d2-b94ebb7db870": "false",
+            "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53": "false"
+          }
+        ],
+        "inputs": [
+          {
+            "id": "480ee653-1f8f-4562-bae0-a502895feafb",
+            "name": "Student GPA",
+            "field": "student.gpa"
+          },
+          {
+            "id": "3d99763e-bffb-4472-a845-91c7f0c3310b",
+            "name": "Prerequisites Completed",
+            "field": "prerequisites.completed"
+          },
+          {
+            "id": "572438ec-5f9e-4937-8982-949d557960a1",
+            "name": "Seats Available",
+            "field": "seats.available"
+          },
+          {
+            "id": "a510fc5b-1cf9-4ca9-99ce-ad17bcfa685d",
+            "name": "Student Year",
+            "field": "student.year"
+          },
+          {
+            "id": "222ee7ac-81c8-4e3b-81d2-b94ebb7db870",
+            "name": "Paid Fees",
+            "field": "paid.fees\n"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "6ee5d7f4-cd10-48f8-9b53-00bd92db7b53",
+            "name": "Enrolment Approved",
+            "field": "enrolment.approved"
+          }
+        ],
+        "passThrough": true,
+        "inputField": null,
+        "outputPath": null,
+        "executionMode": "single",
+        "passThorough": false
+      },
+      "id": "19f0f2bf-27dc-4de0-84e9-07b12c94c29c",
+      "name": "UNIT ENROLMENT",
+      "position": {
+        "x": 350,
+        "y": 160
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "27975cf1-6cff-4389-a9fd-af528e142602",
+      "sourceId": "8b3b81ed-18c1-4a89-ad86-4edf41fa787a",
+      "type": "edge",
+      "targetId": "19f0f2bf-27dc-4de0-84e9-07b12c94c29c"
+    },
+    {
+      "id": "0bcf0c7e-f18a-4c8c-86db-aa6b7dfb01f0",
+      "sourceId": "19f0f2bf-27dc-4de0-84e9-07b12c94c29c",
+      "type": "edge",
+      "targetId": "b367d40e-0e78-48ba-ab5a-1bdb16cac168"
+    }
+  ]
+}
